@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/lenis.min.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
+    <script src="../js/ScrollToPlugin.min.js"></script>
+    <script src="../js/CustomEase.min.js"></script>
+    <title>山水印象 · 页脚示例</title>
+    <!-- 示例字体，可替换为你自己的 -->
+    <style>
+      @font-face {
+        font-family: "myKaiTi";
+        src: url("./江西拙楷2.0.ttf");
+      }
+
+      body {
+        margin: 0;
+        background: #faf8f2;
+        font-family: "myKaiTi", "KaiTi", "STKaiti", serif;
+        color: #222;
+        line-height: 1.8;
+      }
+
+      section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+      }
+
+      .intro {
+        background: #f0e8d8;
+      }
+
+      .middle {
+        background: #e2d7b7;
+      }
+
+      /* 页脚样式 */
+      .china-footer {
+        background: #0e0e0e;
+        color: #e6d8b9;
+        text-align: center;
+        padding: 80px 20px 50px;
+        font-family: "myKaiTi", "KaiTi", "STKaiti", serif;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .footer-content {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .footer-brand h2 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+        letter-spacing: 4px;
+      }
+
+      .footer-brand p {
+        font-size: 1rem;
+        color: #d1c7a1;
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .footer-links a {
+        color: #e6d8b9;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: #fff;
+      }
+
+      .footer-contact {
+        font-size: 0.9rem;
+        color: #c7bfa5;
+        line-height: 1.6;
+      }
+
+      .back-to-top {
+        margin-top: 30px;
+        background: none;
+        border: 1px solid #d1c7a1;
+        color: #e6d8b9;
+        padding: 10px 25px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+      }
+
+      .back-to-top:hover {
+        background: #e6d8b9;
+        color: #0e0e0e;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="intro">山川初见</section>
+    <section class="middle">江河流影</section>
+
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>山水印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <p>From Jay@12579911#qq.com</p>
+          <p>🌏 京ICP备20250123号</p>
+          <p>© 2025 山水印象. 保留所有权利.</p>
+        </div>
+
+        <button id="backToTop" class="back-to-top">回到顶部</button>
+      </div>
+    </footer>
+
+    <script>
+      // GSAP 动画：页脚淡入
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(".china-footer", {
+        scrollTrigger: {
+          trigger: ".china-footer",
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        },
+        opacity: 0,
+        y: 60,
+        duration: 1.2,
+        ease: "power3.out",
+      });
+
+      // 回到顶部
+      document.querySelector("#backToTop").addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>

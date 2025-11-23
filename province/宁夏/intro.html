@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·宁夏</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img class="map" src="/image/新建文件夹/宁夏/2.png" />
+        <div class="w1">宁</div>
+        <div class="w2">夏</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1>黄河静语 宁夏印象</h1>
+            <h2>沙漠生光，水脉成诗</h2>
+            <p>
+              位于中国西北的宁夏，因濒临黄河、依托贺兰而得名“宁夏”。
+              这里沙与水共生，山与川相依，自古便是丝绸古道的要冲、塞上文化的摇篮。
+              黄河自南向北奔流，滋养出银川平原的沃土；贺兰山巍峨如屏，守望着大漠与绿洲。
+              风卷流沙，河润千里，沙湖、沙坡头与青铜峡串起一幅塞上江南的壮丽画卷。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              贺兰山下果园成，塞北江南旧有名。<br />
+              水木万家朱户暗，弓刀千队铁衣鸣。<br />————《送卢潘尚书之灵武》唐·韦蟾
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/宁夏/2.jpg" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/宁夏/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">天阔如镜<br />沙静如梦</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/宁夏/1.jpg" />
+                <div class="cardtro">
+                  <h1>沙坡头</h1>
+                  <p>沙光如金，河曲映日</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/宁夏/4.jpg" />
+                <div class="cardtro">
+                  <h1>六盘山</h1>
+                  <p>林深水语，光影成梦</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/宁夏/7.jpg" />
+                <div class="cardtro">
+                  <h1>黑山峡</h1>
+                  <p>雪山无言，碧水生寒</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/宁夏/8.jpg" />
+                <div class="cardtro">
+                  <h1>海宝塔</h1>
+                  <p>晓塔凌空，金霞绕影</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/宁夏/9.jpg" />
+                <div class="cardtro">
+                  <h1>66号公路</h1>
+                  <p>长路入沙，天穹无际</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/宁夏/10.jpg" />
+                <div class="cardtro">
+                  <h1>沙湖</h1>
+                  <p>一树孤影，半湖晴空</p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>
+                  “大漠无声却自有光， 黄河不息而孕育柔情， 金色与苍青交织之间，
+                  写下西北最温柔的诗。”
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/宁夏/2.jpg" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>贺兰山</h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <!-- <p>From Jay@12579911@qq.com</p> -->
+          <p>© 2025 中国印象. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>

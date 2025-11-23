@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·辽宁</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img class="map" src="/image/新建文件夹/辽宁/2.png" />
+        <div class="w1">辽</div>
+        <div class="w2">宁</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1>山海之北 辽宁印象</h1>
+            <h2>山川多姿，海风含情</h2>
+            <p>
+              辽宁，古称辽东，东临渤海，西接关内，是山与海相依的北国画卷。
+              清晨的鸭绿江上雾气氤氲，夕阳的辽河畔波光潋滟；
+              千山的松涛如歌，老虎滩的浪花如诉。
+              这里有沈阳的古都风骨，也有大连的碧海风光；
+              有本溪水洞的幽深晶莹，也有辽阳白塔的古意悠长。
+              辽宁，以山为骨，以海为韵，在寒与暖的交织间，
+              诉说着北疆的坚韧与温柔。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              山接云霄不记年，松风不断水潺潺。<br />
+              紫雾朝昏迷佛界，金顶高寒近碧天。<br />————《游梵净山》明·张三聘
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/贵州/梵净山2.png" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/贵州/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">山峦如梦<br />涛声似歌</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/辽宁/3.jpg" />
+                <div class="cardtro">
+                  <h1>沈阳</h1>
+                  <p>霓虹与宫墙并立</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/辽宁/5.jpg" />
+                <div class="cardtro">
+                  <h1>星海公园</h1>
+                  <p>海在歌唱，石在聆听</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/辽宁/6.jpg" />
+                <div class="cardtro">
+                  <h1>中央公园</h1>
+                  <p>金风起处，光影如歌</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/辽宁/9.jpg" />
+                <div class="cardtro">
+                  <h1>千山灵岩寺</h1>
+                  <p>一檐青瓦，千年回声</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/辽宁/10.jpg" />
+                <div class="cardtro">
+                  <h1>大连东港</h1>
+                  <p>余晖坠海，光影轻眠</p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>
+                  “辽宁，不止坚毅的钢铁之城， 更有一份被岁月打磨出的温柔光。”
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/辽宁/1.jpg" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>
+            木色的码头伸向蔚蓝，游艇轻晃在晨光里，远山含雾，欧式穹顶闪着微光。大连，总带着浪漫的咸味。
+          </h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <!-- <p>From Jay@12579911@qq.com</p> -->
+          <p>© 2025 中国印象. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>

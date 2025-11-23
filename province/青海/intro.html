@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·青海</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img class="map" src="/image/新建文件夹/青海/2.png" />
+        <div class="w1">青</div>
+        <div class="w2">海</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1>高原之镜 青海印象</h1>
+            <h2>雪映长天，湖揽云光</h2>
+            <p>
+              青海，位于世界屋脊的西缘，是天空与大地相接的所在。风起处，草浪翻滚；云行间，雪山照湖。
+              湟水自东流，穿过金黄的油菜海洋；茶卡的盐结成镜，将苍穹倒映人间。日出如火，牧歌悠悠，牦牛与白云同栖于广阔无垠的草原。
+              青海湖的晨雾轻柔如梦，鸟影点点，浪花拍打着时间的边缘。玉树、果洛的山风中，有经幡猎猎的祈愿，也有雪峰静默的守望。
+              青海，以天为幕，以地为琴，在风声与光影之间，谱写着苍远、宁静而神圣的高原之歌。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              贺兰山下果园成，塞北江南旧有名。<br />
+              水木万家朱户暗，弓刀千队铁衣鸣。<br />————《送卢潘尚书之灵武》唐·韦蟾
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/青海/2.jpg" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/青海/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">天地如镜<br />心泊青湖</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/青海/1.jpg" />
+                <div class="cardtro">
+                  <h1>祁连雪山</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/青海/4.jpg" />
+                <div class="cardtro">
+                  <h1>盐湖</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/青海/5.jpg" />
+                <div class="cardtro">
+                  <h1>翡翠湖</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/青海/6.jpg" />
+                <div class="cardtro">
+                  <h1>青海湖</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/青海/8.jpg" />
+                <div class="cardtro">
+                  <h1>日月山</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>
+                  “在这片高远的土地上，时间被风稀释，生命因辽阔而静谧。
+                  青海不以繁华动人，却以纯净动心——它是大地沉默的诗，是光影写成的祈祷。”
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/青海/2.jpg" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>祁连雪山</h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <!-- <p>From Jay@12579911@qq.com</p> -->
+          <p>© 2025 中国印象. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>

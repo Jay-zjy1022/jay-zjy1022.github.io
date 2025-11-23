@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·黑龙江</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img class="map" src="/image/新建文件夹/黑龙江/2.png" />
+        <div class="w1">黑</div>
+        <div class="w2">龙</div>
+        <div class="w3">江</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1>北境之光 黑龙江印象</h1>
+            <h2>雪映山川，林藏岁月</h2>
+            <p>
+              黑龙江，地处祖国最北方，是冰雪与森林的王国。白桦成海，松涛阵阵；乌苏里江与松花江在晨雾中缓缓流淌，诉说北国的辽阔与静谧。
+              冬有银装素裹的哈尔滨冰城，晶莹剔透如梦境；夏有镜泊湖的碧波荡漾，瀑声如雷映山谷。
+              兴安岭林深雪厚，虎啸鹿鸣间透出原始的生命律动；北极村极光闪烁，仿若星河坠入人间。
+              黑龙江，以寒为性，以光为魂，在冰雪与晨曦之间，绘出一幅壮阔而柔婉的北国画卷。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              穹帐连山落月斜，梦回孤客尚天涯。<br />
+              雁飞白草连天雪，风卷黄沙匝地沙。<br />————《题宁古塔杂诗》清·吴兆骞
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/黑龙江/10.jpg" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/黑龙江/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">林海雪原<br />极光北境</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/黑龙江/1.jpg" />
+                <div class="cardtro">
+                  <h1>漠河北极村</h1>
+                  <p>银装素裹，玉树琼花</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/黑龙江/2.jpg" />
+                <div class="cardtro">
+                  <h1>漠河极光</h1>
+                  <p>星河下的极光之舞</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/黑龙江/3.jpg" />
+                <div class="cardtro">
+                  <h1>伊春</h1>
+                  <p>风拂金草，天地一色</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/黑龙江/4.jpg" />
+                <div class="cardtro">
+                  <h1>奇乾村</h1>
+                  <p>北疆金野，桦影如诗</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/黑龙江/5.jpg" />
+                <div class="cardtro">
+                  <h1>雪谷</h1>
+                  <p>林海雪原，梦入琉璃</p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>
+                  “这片北国大地，在万里冰封与晨曦初照之间，书写着属于极境的壮美与温柔。”
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/黑龙江/6.jpg" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>
+            松花江畔，晚霞如火，桥影横空，水光映天。哈尔滨的母亲河在暮色中流淌着北国的温柔与壮阔。
+          </h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <!-- <p>From Jay@12579911@qq.com</p> -->
+          <p>© 2025 中国印象. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>

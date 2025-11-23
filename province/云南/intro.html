@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·云南</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img class="map" src="/image/新建文件夹/云南/2.png" />
+        <div class="w1">云</div>
+        <div class="w2">南</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1>彩云之南 云南印象</h1>
+            <h2>山水多情，四时如歌</h2>
+            <p>
+              云南，天光流转，云影成诗。
+              苍山雪未融，洱海波犹柔，古城青石路上回荡着悠然的脚步声。
+              丽江的夜，灯火阑珊，流水潺潺如梦；香格里拉的晨，佛音袅袅，阳光穿透经幡的色彩。
+              西双版纳林海无边，孔雀振翅，热风中藏着热带的脉动；石林嶙峋如画，万年风声雕刻出地球的记忆。
+              这里有茶马古道的铃音，也有梯田金浪的辉光；有雪山的冷峻，也有花市的温柔。
+              云南，是山的韵脚，是云的心绪——
+              在多民族的笑声与歌声中，汇聚出人间最自由的色彩与呼吸。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              <!-- 白日依山尽，黄河入海流。<br />
+              欲穷千里目，更上一层楼。<br />————《登鹳雀楼》 唐·王之涣 -->
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/云南/玉龙雪山.png" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/云南/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">云作序<br />山为章</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/云南/大理.png" />
+                <div class="cardtro">
+                  <h1>大理</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/云南/滇池1.png" />
+                <div class="cardtro">
+                  <h1>滇池</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/云南/蓝月谷1.jpg" />
+                <div class="cardtro">
+                  <h1>蓝月谷</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/云南/丽江古城3.png" />
+                <div class="cardtro">
+                  <h1>丽江古城</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/云南/石林.jpg" />
+                <div class="cardtro">
+                  <h1>石林</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/云南/西双版纳野象谷.jpg" />
+                <div class="cardtro">
+                  <h1>西双版纳野象谷</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/云南/玉龙雪山3.png" />
+                <div class="cardtro">
+                  <h1>玉龙雪山</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>“万物并秀，处处皆是生动的诗行。”</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/云南/滇池.png" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>滇池</h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <!-- <p>From Jay@12579911@qq.com</p> -->
+          <p>© 2025 中国印象. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>

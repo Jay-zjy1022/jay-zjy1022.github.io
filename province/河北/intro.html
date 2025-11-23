@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·河北</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img class="map" src="/image/新建文件夹/河北/2.png" />
+        <div class="w1">河</div>
+        <div class="w2">北</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1>燕赵古风 河北印象</h1>
+            <h2>长城卧雪，古韵生风</h2>
+            <p>
+              位于华北平原与燕山山脉之间的河北，北依长城，南临黄河，地势由山川到平原层层铺展。
+              这里既是中原与塞北的交汇之地，也是古今往来的战略要冲。
+              太行巍峨，燕山叠翠；渤海碧波，白洋淀澄明。
+              自古“燕赵多慷慨悲歌之士”，这片土地沉淀着英雄的风骨与文明的底色。
+              今日河北，古韵犹存，山河新生，在厚重与开阔之间延续着北国的壮美与深情。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              大漠沙如雪，燕山月似钩。<br />
+              何当金络脑，快走踏清秋。<br />————《马诗·其五》唐·李贺
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/河北/现代.jpeg" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/河北/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">山川壮阔<br />文脉深长</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/河北/1.jpg" />
+                <div class="cardtro">
+                  <h1>承德避暑山庄</h1>
+                  <p>山水交融，亭台映影</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/河北/5.jpg" />
+                <div class="cardtro">
+                  <h1>金山岭长城</h1>
+                  <p>烽火万里，蜿蜒如龙</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/河北/6.jpg" />
+                <div class="cardtro">
+                  <h1>太行大峡谷</h1>
+                  <p>壁立千仞，云雾翻腾</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/河北/7.jpg" />
+                <div class="cardtro">
+                  <h1>北戴河</h1>
+                  <p>浪拍金沙，鸥翔天际</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/河北/8.jpg" />
+                <div class="cardtro">
+                  <h1>丛台公园</h1>
+                  <p>飞雪映塔，古韵犹存</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/河北/9.jpg" />
+                <div class="cardtro">
+                  <h1>大名天主堂</h1>
+                  <p>欧式尖塔直指云天</p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>
+                  “石径通古寺，松声伴钟鸣。赤水丹霞照残阳，黔中万峰起暮色——山静如思，水行如梦。”
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/河北/2.jpg" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>
+            群山如海，深壑如剑。阴云翻涌之上，一束光穿透天幕，直落谷底。那光仿佛天地间的一道信使，照亮了千年的寂静，也照亮了人心中那份隐秘的震撼与敬畏。
+          </h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <!-- <p>From Jay@12579911@qq.com</p> -->
+          <p>© 2025 中国印象. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>

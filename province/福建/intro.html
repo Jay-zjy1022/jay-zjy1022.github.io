@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·福建</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img
+          class="map"
+          src="/image/新建文件夹/福建/ade5e284123e2fc3fa066d89dfc82833.png"
+        />
+        <div class="w1">福</div>
+        <div class="w2">建</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1>八闽山海 福建印象</h1>
+            <h2>山水共生，海风入梦</h2>
+            <p>
+              福建，古称闽地，地处东南沿海，背倚武夷群峰，面向浩渺东海。
+              崇山叠翠，江海交融，造就了山的灵秀与海的旷远。
+              这里有闽南古厝的红砖碧瓦，也有土楼深藏的世代温情；有武夷山的烟霞九曲，也有鼓浪屿的浪影琴声。
+              福建，以山为骨，以海为魂，在潮声与茶香之间，书写着柔韧而深远的东方诗意。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              万壑千岩拱碧流，天风吹下九溪秋。<br />
+              只应仙子来时见，笑倚丹崖听水游。<br />————《题武夷山》 宋·陆游
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/福建/武夷山.png" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/福建/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">山海相拥<br />云水共生</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/福建/东山岛1.jpg" />
+                <div class="cardtro">
+                  <h1>东山岛</h1>
+                  <p>海阔天青，浪起云低</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/福建/闽江.png" />
+                <div class="cardtro">
+                  <h1>闽江</h1>
+                  <p>水映青山，云浮两岸</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/福建/厦门2.png" />
+                <div class="cardtro">
+                  <h1>厦门</h1>
+                  <p>圆映塔影，水映天光</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/福建/厦门双子塔1.png" />
+                <div class="cardtro">
+                  <h1>厦门双子塔</h1>
+                  <p>镜映天海，城起潮头</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/福建/太姥山.png" />
+                <div class="cardtro">
+                  <h1>太姥山</h1>
+                  <p>朝晖映石，云海无涯</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/福建/土楼.png" />
+                <div class="cardtro">
+                  <h1>土楼</h1>
+                  <p>山抱土楼，云藏炊烟</p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>“此地以山为骨，以海为魂，既有闽越之韵，又含山海之情。”</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/福建/鼓浪屿.jpg" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>海风翻卷乐声，红瓦映日，梦在波光之上。</h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <p>From Jay@12579911@qq.com</p>
+          <!-- <p>© 2025 中国印象. 保留所有权利.</p> -->
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>

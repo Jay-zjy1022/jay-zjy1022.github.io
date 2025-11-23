@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·贵州</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img class="map" src="/image/新建文件夹/贵州/贵州.png" />
+        <div class="w1">贵</div>
+        <div class="w2">州</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1>云岭之魂 贵州印象</h1>
+            <h2>山藏云梦，水映人心</h2>
+            <p>
+              贵州，地势高峻，云雾缭绕，是山与雾共舞的王国。
+              黔山连绵似浪，乌江如练穿谷；黄果树瀑布飞珠溅玉，荔波水色碧透无尘。
+              这里有苗寨的银饰闪烁与歌声回荡，也有古镇的青石幽巷与烟火人家；
+              有群峰的苍茫壮阔，也有梯田的细语流光。
+              贵州，以山为骨，以云为魂，在鼓点与歌声之间，勾勒出一幅深邃而灵动的高原画卷。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              山接云霄不记年，松风不断水潺潺。<br />
+              紫雾朝昏迷佛界，金顶高寒近碧天。<br />————《游梵净山》明·张三聘
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/贵州/梵净山2.png" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/贵州/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">云栖净土<br />山静心声</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/贵州/梵净山.png" />
+                <div class="cardtro">
+                  <h1>梵净山</h1>
+                  <p>云起处心安，尘落处极乐</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/贵州/黄果树瀑布1.jpg" />
+                <div class="cardtro">
+                  <h1>黄果树瀑布</h1>
+                  <p>风声如鼓，日影如梦</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/贵州/荔枝小七孔3.jpg" />
+                <div class="cardtro">
+                  <h1>荔枝小七孔</h1>
+                  <p>一泓碧水倒映着山的温柔</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/贵州/万林峰3.png" />
+                <div class="cardtro">
+                  <h1>万林峰</h1>
+                  <p>千峰竞秀，层叠如浪</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/贵州/西江千户苗寨2.png" />
+                <div class="cardtro">
+                  <h1>西江千户苗寨</h1>
+                  <p>炊烟起处，鼓楼回声</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/贵州/西江千户苗寨3.png" />
+                <div class="cardtro">
+                  <h1>西江千户苗寨</h1>
+                  <p>千户灯火，照亮苗岭夜色</p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>
+                  “石径通古寺，松声伴钟鸣。赤水丹霞照残阳，黔中万峰起暮色——山静如思，水行如梦。”
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/贵州/万林峰4.png" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>
+            此处天地浑然一体，仿佛远古的梦境未醒。——“峰回路转处，仿佛行入一卷山河长卷。
+          </h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <!-- <p>From Jay@12579911@qq.com</p> -->
+          <p>© 2025 中国印象. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>

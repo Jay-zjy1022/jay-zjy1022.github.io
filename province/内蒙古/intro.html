@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·内蒙古</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img class="map" src="/image/新建文件夹/内蒙古/2.png" />
+        <div class="w1">内</div>
+        <div class="w2">蒙</div>
+        <div class="w3">古</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1>天苍地远 内蒙古印象</h1>
+            <h2>草原无垠，风马自由</h2>
+            <p>
+              内蒙古，地接北疆，是风与草共同呼吸的大地。
+              草原铺陈如海，云影游走如梦；黄河九曲，蜿蜒入怀，成就苍茫的诗篇。
+              春来牧歌悠长，秋至牛羊成群；那达慕的鼓声，回荡着祖辈的豪情。
+              呼伦贝尔的晨雾轻拂白桦，腾格里的星空深藏无言；
+              风过草尖，似诉似笑，仿佛能听见远古的蹄声。
+              内蒙古，以风为骨，以原为魂，在辽阔与静寂之间，
+              书写着天地共鸣的永恒与自由。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              敕勒川，阴山下。 天似穹庐，笼盖四野 。<br />
+              天苍苍 ，野茫茫。风吹草低见牛羊。<br />————《敕勒歌》北朝民歌
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/内蒙古/现代.jpg" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/内蒙古/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">天高如歌<br />草长如潮</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/内蒙古/1.jpg" />
+                <div class="cardtro">
+                  <h1>乌兰湖</h1>
+                  <p>赤湖碎镜，盐花如雪</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/内蒙古/2.jpg" />
+                <div class="cardtro">
+                  <h1>日落湿地</h1>
+                  <p>金辉潋滟，草原静语</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/内蒙古/3.jpg" />
+                <div class="cardtro">
+                  <h1>莫日格勒河</h1>
+                  <p>碧野千里，水绕天涯</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/内蒙古/4.jpg" />
+                <div class="cardtro">
+                  <h1>格尔古纳湿地</h1>
+                  <p>金林映水，秋意正浓</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/内蒙古/6.jpg" />
+                <div class="cardtro">
+                  <h1>蒙古包</h1>
+                  <p>白毡静立，青岭相伴</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/内蒙古/7.jpg" />
+                <div class="cardtro">
+                  <h1>大红山</h1>
+                  <p>赤岭连绵，岁月雕痕</p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>
+                  “大地辽阔如诗，风从远方而来， 携着草香与马蹄的节奏，
+                  在金色与碧绿的交错间， 绘出北疆最悠长的梦。”
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/内蒙古/5.jpg" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>
+            这座火山宛如地球的瞳孔，被时间雕琢成深邃的圆环。炽红与焦黑交织，仿佛一场被凝固的烈焰。风吹过，带着火山灰的味道，提醒人们：大地的心脏，仍在缓缓跳动。
+          </h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <!-- <p>From Jay@12579911@qq.com</p> -->
+          <p>© 2025 中国印象. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>

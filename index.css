@@ -1,0 +1,726 @@
+/* 基本设置 */
+
+/* color: #5d4037; 文字色 */
+/* background-color: #f2ebd8; 层次背景 */
+@font-face {
+  font-family: myKaiTi1;
+  src: url("./江西拙楷2.0.ttf");
+}
+@font-face {
+  font-family: Xing;
+  src: url("./云峰静龙行书.ttf");
+}
+@font-face {
+  font-family: myKaiTi;
+  src: url("./鸿雷行书简体.otf");
+}
+:root {
+  font-size: clamp(7px, 1.5vw + 0.5px, 16px);
+  --root: 1rem; /* 方便阅读 */
+  --swatch--dark-green-1: #0c1b16;
+  --bg: #f5f0e6;
+  /* --fg: #fff; */
+  --card-1: #b2b2b2;
+  --card-2: #ce2017;
+  --card-3: #2f2f2f;
+}
+* {
+  /* scroll-behavior: smooth; */
+  /* font-family: Noto Serif SC; */
+  caret-color: transparent;
+  font-family: "myKaiTi";
+  /* font-family: "Xing"; */
+  /* Noto Serif SC */
+  scrollbar-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 1vmin; */
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+}
+.screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f1f1f1f1; */
+  background-color: #f5f0e6;
+  z-index: -100;
+  margin: 0;
+}
+/* 封面 */
+.main {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  position: relative;
+}
+.mainWord {
+  z-index: 0;
+}
+.map {
+  top: 50%;
+  right: -50px;
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+.mainBg {
+  position: absolute;
+  width: 100svw;
+  height: 100svh;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.mapBg {
+  /* display: flex; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: 2;
+}
+
+#mapChinese {
+  transform: translate(-16px, 144px) scale(1.522);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* opacity: 0.1; */
+  z-index: 3;
+}
+
+.mapProvince {
+  cursor: pointer;
+  opacity: 0.1;
+  fill: green;
+}
+.mapProvince:hover {
+  fill: #ff6b6b;
+  opacity: 0.5;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2)) url(#pencilTexture)
+    brightness(1.1);
+}
+@media (max-width: 1000px) {
+  * {
+    overflow: visible;
+  }
+  .mainWord {
+    opacity: 0;
+  }
+  .map {
+    width: 400px;
+    height: 300px;
+  }
+  #mapChinese {
+    transform: translate(-160px, -41px) scale(0.761);
+  }
+}
+
+.video-container {
+  /* background-color: #f5f0e6; */
+  position: relative;
+  background: linear-gradient(135deg, #f8f3e8, #c7d8c0);
+  color: #333;
+  text-shadow: none;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+.video {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  transform-origin: top center;
+}
+.video-text {
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: 0%;
+  left: 25%;
+  font-size: 1.5rem;
+}
+/* 第一面 */
+.screen1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 500vh;
+  background: linear-gradient(135deg, #f8f3e8, #e8dccc);
+  /* background-color: #f5ebd7; */
+  /* background: linear-gradient(135deg, #f8f3e8, #c7d8c0); */
+  z-index: 100;
+}
+.screen1-bg {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  /* background-image: linear-gradient(
+    0deg,
+    #a7754d,
+    #a7754d00 20%,
+    #a7754d00 70%,
+    #a7754d 90%
+  ); */
+  background-image: linear-gradient(
+    0deg,
+    #f5f0e6,
+    #f5f0e600 20%,
+    #f5f0e600 70%,
+    #f5f0e6 90%
+  );
+  z-index: 100;
+}
+.screen1-cards {
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+}
+.center-image {
+  opacity: 0;
+  transition: none;
+}
+#screen1-1 {
+  position: absolute;
+  border-radius: 15px;
+  left: 17%;
+  top: 8%;
+  width: 200px;
+  height: 270px;
+}
+#screen1-2 {
+  position: absolute;
+  border-radius: 15px;
+  left: 75%;
+  top: 18%;
+  width: 130px;
+  height: 190px;
+}
+#screen1-3 {
+  position: absolute;
+  border-radius: 15px;
+  left: 59%;
+  top: 9%;
+  width: 240px;
+  height: 180px;
+}
+#screen1-4 {
+  position: absolute;
+  border-radius: 15px;
+  left: 23%;
+  top: 21%;
+  width: 200px;
+  height: 270px;
+}
+#screen1-5 {
+  position: absolute;
+  border-radius: 15px;
+  left: 7%;
+  top: 30%;
+  width: 130px;
+  height: 190px;
+}
+#screen1-6 {
+  position: absolute;
+  border-radius: 15px;
+  left: 48%;
+  top: 37%;
+  width: 200px;
+  height: 240px;
+}
+#screen1-7 {
+  position: absolute;
+  border-radius: 15px;
+  left: 81%;
+  top: 31%;
+  width: 200px;
+  height: 270px;
+}
+#screen1-8 {
+  position: absolute;
+  border-radius: 15px;
+  left: 22%;
+  top: 46%;
+  width: 230px;
+  height: 290px;
+}
+#screen1-9 {
+  position: absolute;
+  border-radius: 15px;
+  left: 69%;
+  top: 51%;
+  width: 280px;
+  height: 180px;
+}
+#screen1-10 {
+  position: absolute;
+  border-radius: 15px;
+  left: 37%;
+  top: 62%;
+  width: 200px;
+  height: 270px;
+}
+#screen1-11 {
+  position: absolute;
+  border-radius: 15px;
+  left: 65%;
+  top: 69%;
+  width: 330px;
+  height: 240px;
+}
+#screen1-12 {
+  position: absolute;
+  border-radius: 15px;
+  left: 13%;
+  top: 72%;
+  width: 240px;
+  height: 180px;
+}
+#screen1-13 {
+  position: absolute;
+  border-radius: 15px;
+  left: 12%;
+  top: 88%;
+  width: 220px;
+  height: 270px;
+}
+#screen1-14 {
+  position: absolute;
+  border-radius: 15px;
+  left: 52%;
+  top: 83%;
+  width: 280px;
+  height: 190px;
+}
+#screen1-15 {
+  position: absolute;
+  border-radius: 15px;
+  left: 70%;
+  top: 91%;
+  width: 240px;
+  height: 180px;
+}
+#screen1-16 {
+  /* filter: saturate(0.7) hue-rotate(5deg); */
+  position: absolute;
+  border-radius: 15px;
+  left: 71%;
+  top: 60%;
+  width: 190px;
+  height: 230px;
+}
+.content1 {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.screen1-text {
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 2;
+  /* color: #4b2e05; */
+  color: #7b6b5b;
+  /* color: #2b2b2b; */
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(80%);
+  transform: translateX(-30%);
+  filter: blur(5px);
+  transition: opacity 1s ease-out, transform 1s ease-out, filter 1s ease-out;
+  will-change: opacity, transform, filter;
+}
+@media (max-width: 1000px) {
+  .screen1 {
+    display: none !important;
+  }
+}
+.marquee {
+  display: flex;
+  position: relative;
+  /* top: 80%; */
+  height: 40vh;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  /* background: linear-gradient(135deg, #020617, #0f172a, #1e293b); */
+  /* background-color: blueviolet; */
+  background: linear-gradient(135deg, #2a1b0a, #4e2e13, #a05a28);
+  /* background: linear-gradient(135deg, #0f1724, #2e4057); */
+  /* background-color: #2d2320; */
+  gap: 30px;
+}
+.marquee1 {
+  display: inline-block;
+  transform: translateY(0);
+}
+.marquee1 h1 {
+  /* font-family: sans-serif; */
+  /* color: #f0e5c8; */
+  /* color: #2d2320; */
+  color: khaki;
+  font-size: 10rem;
+  font-weight: 700;
+  /* line-height: 10px; */
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
+}
+/* 卡片 */
+.sticky {
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgba(0, 0, 0, 1); */
+}
+.overlay {
+  position: absolute;
+  inset: 0; /* 等价于 top/right/bottom/left:0 */
+  background: rgba(0, 0, 0, 0.15);
+  /* 半透明黑色，可调深浅 */
+  z-index: -1;
+}
+.sticky-img {
+  /* 黑色半透明 */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  z-index: -2;
+}
+.sticky-header {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sticky-header h1 {
+  font-family: "myKaiTi";
+  font-family: "Xing";
+  color: #f5ebd7;
+  font-size: 5rem;
+  position: relative;
+  text-align: center;
+  will-change: transform, opacity;
+  transform: translateY(40px);
+  opacity: 0;
+}
+.card-container {
+  position: relative;
+  width: 75%;
+  display: flex;
+  perspective: 1000px;
+  transform: translateY(40px);
+  will-change: width;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  aspect-ratio: 5/7;
+  transform-style: preserve-3d;
+  transform-origin: top;
+}
+#card-1 {
+  border-radius: 20px 0 0 20px;
+}
+#card-3 {
+  border-radius: 0 20px 20px 0;
+}
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-back,
+.card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: inherit;
+  overflow: hidden;
+}
+.card-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 2rem;
+}
+.card-back span {
+  position: absolute;
+  color: #fff;
+  top: 2rem;
+  left: 2rem;
+  font-size: 2rem;
+  /* opacity: 0.4; */
+}
+.card-back p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+#card-1 .card-back {
+  background-color: var(--card-1);
+}
+
+#card-2 .card-back {
+  background-color: var(--card-2);
+}
+#card-3 .card-back {
+  background-color: var(--card-3);
+}
+
+@media (max-width: 1000px) {
+  .sticky {
+    height: max-content;
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
+  .sticky-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-bottom: 4rem;
+  }
+  .sticky-header h1 {
+    opacity: 1;
+  }
+  .card-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 20p !important;
+  }
+  #card-1,
+  #card-2,
+  #card-3,
+  .card-back {
+    transform: none;
+  }
+}
+
+/* 横向移动 */
+.rowShow {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  /* height: 300vh; */
+}
+
+.container {
+  /* flex-direction: column; */
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #17f700; */
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.cardsbox {
+  display: flex;
+  /* width: 3000px; */
+}
+.rowtro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 100vh;
+  background-color: #3333;
+  font-size: 2rem;
+}
+.rowtrop {
+  font-family: MyKaiTi1;
+  /* font-family: Xing; */
+  position: relative;
+  top: 20%;
+  /* left: %; */
+  font-size: 2rem;
+  width: 80%;
+  height: 100vh;
+  line-height: 2;
+  /* letter-spacing: 0.5em; */
+}
+.cardsbox_card {
+  display: flex;
+  /* flex-direction: ; */
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+.cardsbox_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.row-text {
+  /* font-family: myKaiTi; */
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.row-texth1 h1 {
+  /* display: flex; */
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  writing-mode: vertical-rl; /* 竖排从上到下 */
+  text-orientation: upright;
+  /* 正常竖字 */
+  font-size: 5rem;
+  line-height: 1.2;
+  letter-spacing: 0.3em;
+  font-weight: bold;
+  /* margin-right: 60px; */
+  /* 与正文区间隔 */
+  /* height: 80vh; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* border-right: 2px solid #111; 视觉分界线，可去掉 */
+  /* padding-right: 20px; */
+  /* position: absolute;
+  font-size: 3rem; */
+}
+.row-texth2 h2 {
+  position: absolute;
+  top: 12%;
+  left: 28%;
+  writing-mode: vertical-rl; /* 竖排从上到下 */
+  text-orientation: upright;
+  /* 正常竖字 */
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 0.5em;
+  font-weight: bold;
+  /* margin-right: 60px; */
+  /* 与正文区间隔 */
+  /* height: 80vh; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* border-right: 2px solid #111; 视觉分界线，可去掉 */
+  /* padding-right: 20px; */
+  /* position: absolute;
+  font-size: 3rem; */
+}
+.row-textp {
+  position: relative;
+  top: 30%;
+  left: 35%;
+  width: 60%;
+  font-size: 2rem;
+  /* position: absolute; */
+  /* white-space: normal; */
+  /* left: */
+}
+/* 侧边栏 */
+.side-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.side-menu {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  z-index: 100;
+  font-family: "myKaiTi", sans-serif;
+}
+
+.side-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.side-menu li {
+  font-family: Xing;
+  cursor: pointer;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #666;
+  /* color: #d1c7a1; */
+  color: #d6c89f;
+  /* color: #e6d8d9; */
+  transition: color 0.3s, transform 0.3s;
+  white-space: nowrap;
+}
+.side-menu li:hover {
+  /* color: #000; */
+  color: #ee170b;
+}
+/* .side-menu li.active {
+  color: #000;
+  font-weight: 700;
+  transform: translateX(4px);
+} */
+
+/* intro2 */
+.end {
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #e2d7b7;
+}
+.end-h1 {
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  top: 30%;
+  width: 70%;
+  height: 70%;
+}

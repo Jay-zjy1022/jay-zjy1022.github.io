@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·山西</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img class="map" src="/image/新建文件夹/山西/2.png" />
+        <div class="w1">山</div>
+        <div class="w2">西</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1>晋土古韵 山西印象</h1>
+            <h2>山峦如史，风骨如碑</h2>
+            <p>
+              山西，黄土高原的心脉，尘沙中沉睡着千年的文明。
+              太行横亘，吕梁起伏，山影如屏，层叠着岁月的痕迹。
+              平遥古城的青砖依旧，檐角微翘，商贾的脚步似乎仍在回响；云冈石窟的佛像凝望千秋，石与光共同述说信仰的深沉。
+              壶口瀑布奔腾如雷，黄河怒吼中蕴藏着中原的血脉；五台山云绕峰巅，钟声悠悠，在烟雾间回荡成灵魂的安息。
+              山西，以山为骨，以土为魂，在尘与光、古与新的交织中，延续着厚重而静远的中国气息。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              白日依山尽，黄河入海流。<br />
+              欲穷千里目，更上一层楼。<br />————《登鹳雀楼》 唐·王之涣
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/山西/现代.jpeg" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/山西/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">一省烟尘<br />半部华夏</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/山西/1.jpg" />
+                <div class="cardtro">
+                  <h1>太行山</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/山西/3.jpg" />
+                <div class="cardtro">
+                  <h1>绵山</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/山西/4.jpg" />
+                <div class="cardtro">
+                  <h1>平遥古城</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/山西/5.jpg" />
+                <div class="cardtro">
+                  <h1>黄崖洞</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/山西/7.jpg" />
+                <div class="cardtro">
+                  <h1>应县木塔</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/山西/9.jpg" />
+                <div class="cardtro">
+                  <h1>五台山</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/山西/10.jpg" />
+                <div class="cardtro">
+                  <h1>黄河</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>
+                  “在这片高远的土地上，时间被风稀释，生命因辽阔而静谧。
+                  山西不以繁华动人，却以纯净动心——它是大地沉默的诗，是光影写成的祈祷。”
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/山西/2.jpg" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>大同古城</h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <!-- <p>From Jay@12579911@qq.com</p> -->
+          <p>© 2025 中国印象. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>

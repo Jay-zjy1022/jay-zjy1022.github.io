@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·天津</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img class="map" src="/image/新建文件夹/天津/2.png" />
+        <div class="w1">天</div>
+        <div class="w2">津</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1>津门风华 天津印象</h1>
+            <h2>九河汇流，百年回望</h2>
+            <p>
+              天津，立于九河之畔，水脉成文，风骨自成。
+              海河穿城而过，波光潋滟间映照出旧洋楼的影与时光的痕。
+              鼓楼晨钟，意气犹在；意式风情街的拱门下，岁月依旧带着异国的余温。
+              古文化街香火缭绕，泥人张的笑容里藏着老城的俏皮与真味。
+              大沽口外，浪拍铁岸，远帆点点；津湾广场上，灯火如织，城市的节拍与潮声共鸣。
+              天津，是北方的海风，也是旧梦的温城；
+              在钢铁与砖石之间，仍回荡着评书的腔调，煎饼果子的香气与码头的呼喊。
+              这座城，用包容筑起气度，用微笑迎接晨光，在新旧交融的脉络里延续着独有的风华。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              贺兰山下果园成，塞北江南旧有名。<br />
+              水木万家朱户暗，弓刀千队铁衣鸣。<br />————《送卢潘尚书之灵武》唐·韦蟾
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/天津/2.jpg" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/天津/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">津水映城<br />烟火入画</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/天津/1.jpg" />
+                <div class="cardtro">
+                  <h1>金汤桥</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/天津/3.jpg" />
+                <div class="cardtro">
+                  <h1>天津之眼</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/天津/4.jpg" />
+                <div class="cardtro">
+                  <h1>世纪钟</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/天津/7.jpg" />
+                <div class="cardtro">
+                  <h1>瓷房子</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/天津/10.jpg" />
+                <div class="cardtro">
+                  <h1>五大道</h1>
+                  <p></p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>“百年风华沉淀于街巷之间， 柔光照旧梦，韵味自悠长。”</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/天津/2.jpg" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>海河</h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <!-- <p>From Jay@12579911@qq.com</p> -->
+          <p>© 2025 中国印象. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>

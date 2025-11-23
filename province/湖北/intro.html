@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·湖北</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img class="map" src="/image/新建文件夹/湖北/湖北地图.png" />
+        <div class="w1">湖</div>
+        <div class="w2">北</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1 class="main-title tt">湖北：江河之间的千年省份</h1>
+            <p class="paragraph tt">
+              位于中国中部的湖北，因地处长江中游、洞庭湖以北而得名“湖北”。
+              这里山川纵横、江湖交织，自古便是九州腹地的交通要冲、文脉重地。
+              长江横贯东西，汉水穿城而过，湖泊星罗棋布——“千湖之省”的美名由此而来。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              昔人已乘黄鹤去， 此地空余黄鹤楼。 黄鹤一去不复返，
+              白云千载空悠悠。 <br />晴川历历汉阳树， 芳草萋萋鹦鹉洲。
+              日暮乡关何处是？ 烟波江上使人愁。<br />————《黄鹤楼》 唐·崔颢
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/湖北/现代.jpg" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/湖北/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">山水楚天<br />云梦泽畔</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/湖北/恩施大峡谷.png" />
+                <div class="cardtro">
+                  <h1>恩施大峡谷</h1>
+                  <p>天柱入云，绝壁惊魂</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/湖北/恩施大峡谷1.png" />
+                <div class="cardtro">
+                  <h1>恩施大峡谷</h1>
+                  <p>碧水穿峡，瀑布飞流</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/湖北/恩施大峡谷2.png" />
+                <div class="cardtro">
+                  <h1>恩施大峡谷</h1>
+                  <p>层瀑叠翠，幽谷清泉</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/湖北/武当山1.png" />
+                <div class="cardtro">
+                  <h1>武当山</h1>
+                  <p>金顶映月，道法天成</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/湖北/武当山2.png" />
+                <div class="cardtro">
+                  <h1>武当山</h1>
+                  <p>天柱入云，绝壁惊魂</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/湖北/长江三峡.png" />
+                <div class="cardtro">
+                  <h1>长江三峡</h1>
+                  <p>云起峡巅，舟行画中</p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>
+                  “自古荆楚多灵秀，山为脊梁，水为魂魄——湖北之景，既雄浑厚重，亦清丽深远。”
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/湖北/武汉.png" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>“从黄鹤楼到长江桥——江城的目光，跨越千年。”</h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <!-- <p>From Jay@12579911@qq.com</p> -->
+          <p>© 2025 中国印象. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>

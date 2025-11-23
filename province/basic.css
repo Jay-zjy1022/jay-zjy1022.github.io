@@ -1,0 +1,160 @@
+@font-face {
+  font-family: myKaiTi1;
+  src: url("/index/江西拙楷2.0.ttf");
+}
+@font-face {
+  font-family: Xing;
+  src: url("/index/云峰静龙行书.ttf");
+}
+@font-face {
+  font-family: myKaiTi;
+  src: url("/index/鸿雷行书简体.otf");
+}
+.back-to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+.back-to-top:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  /* background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px); */
+  background: transparent;
+  /* background: rgba(17, 17, 17, 0.9);
+  backdrop-filter: blur(8px); */
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+.navbar-container {
+  display: flex;
+  justify-content: center; /* 核心：让内容整体居中 */
+  align-items: center;
+  gap: 60px;
+  /* logo 和菜单间距 */
+}
+.logo {
+  font-family: Xing;
+  font-size: 2rem;
+  color: #2b2b2b;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 0 0 0;
+  letter-spacing: 1px;
+}
+.navbar {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+.navbar a {
+  font-family: Noto Serif SC;
+  font-size: 1rem;
+  color: #2b2b2b;
+  /* color: #000; */
+  text-decoration: none;
+  font-weight: 700;
+  /* margin-left: 4rem; */
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  transition: color 0.3s;
+  z-index: 1000;
+}
+.navbar a:hover {
+  color: #3e5b5e;
+}
+@media (max-width: 700px) {
+  .header {
+    width: 40%;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* 页脚样式 */
+.china-footer {
+  background: #0e0e0e;
+  color: #e6d8b9;
+  text-align: center;
+  padding: 80px 20px 50px;
+  font-family: "myKaiTi", "KaiTi", "STKaiti", serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-content {
+  font-family: "myKaiTi1";
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-brand h2 {
+  font-family: "myKaiTi1";
+  font-size: 2rem;
+  margin-bottom: 5px;
+  letter-spacing: 4px;
+}
+
+.footer-brand p {
+  font-family: "myKaiTi1";
+  font-size: 1rem;
+  color: #d1c7a1;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-family: "myKaiTi1";
+  color: #e6d8b9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-contact {
+  font-size: 0.9rem;
+  color: #c7bfa5;
+  line-height: 1.6;
+}
+.footer-content p {
+  font-family: "myKaiTi1";
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国印象·江西</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introProvince.css" />
+    <link rel="stylesheet" type="text/css" href="/province/basic.css" />
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <script src="/js/ScrollToPlugin.min.js"></script>
+    <script src="/js/CustomEase.min.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="backToTop" class="back-to-top">回到顶部</div>
+    <!-- 导航栏 -->
+    <header class="header">
+      <div class="navbar-container">
+        <div class="logo">中国印象</div>
+        <!-- <a href="#" class="logo">中国印象</a> -->
+        <nav class="navbar">
+          <li><a href="/index/index.html">Home</a></li>
+          <li><a href="/index/cultural.html">Cultural</a></li>
+          <li><a href="/index/nature.html">Nature</a></li>
+          <li><a href="/index/city.html">City</a></li>
+          <li><a href="/index/dark.html">Dark</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+      </div>
+    </header>
+    <div class="screen-container">
+      <div class="main">
+        <img class="mainBg" src="/image/bg.png" />
+        <img class="map" src="/image/新建文件夹/江西/2.png" />
+        <div class="w1">江</div>
+        <div class="w2">西</div>
+      </div>
+      <div class="intro1">
+        <div class="content1">
+          <div class="text1">
+            <h1>赣风入画 江西印象</h1>
+            <h2>山水生香，人文入画</h2>
+            <p>
+              江西，这是一方被山水写下的诗笺。
+              庐山云雾氤氲，似梦似幻；鄱阳湖浩渺无边，映出千顷碧波。滕王阁凭江而立，风送琼音，古意长存。婺源的油菜花在春日中层层铺展，徽派白墙与青瓦倒映溪畔。景德镇的瓷火未冷，千年工艺在指尖闪耀出温润的光。
+              这里，山藏文气，水蕴灵魂。江西，不张扬，却有一种深藏不露的温柔与力量。
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="changeShow" id="scaling-image">
+            <div class="shi">
+              日照香炉生紫烟，遥看瀑布挂前川。<br />
+              飞流直下三千尺，疑是银河落九天。<br />————《望庐山瀑布》 唐·李白
+            </div>
+            <div class="gujin_button">
+              <img src="/image/main/古今.png" alt="古今" />
+              <p class="gujin"></p>
+            </div>
+            <img src="/image/江西/现代.jpg" class="jin" />
+            <!-- <div class="gu"></div> -->
+            <img src="/image/江西/古代.png" class="gu" />
+            <!-- <div class="jin"></div> -->
+          </div>
+        </div>
+      </div>
+      <div class="rowShow">
+        <div class="wrapper">
+          <div class="container">
+            <div class="cardsbox">
+              <div class="row-text">
+                <div class="row-textp">山水灵秀<br />人文璀璨</div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/江西/滕王阁1.png" />
+                <div class="cardtro">
+                  <h1>滕王阁</h1>
+                  <p>高阁凌云，文心千古</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/江西/武功山.png" />
+                <div class="cardtro">
+                  <h1>武功山</h1>
+                  <p>木栈蜿蜒，通往云端</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/江西/婺源.png" />
+                <div class="cardtro">
+                  <h1>婺源</h1>
+                  <p>梯田叠翠，金浪翻光</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/江西/婺源1.png" />
+                <div class="cardtro">
+                  <h1>婺源</h1>
+                  <p>薄雾绕村，炊烟袅袅</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/江西/井冈山2.png" />
+                <div class="cardtro">
+                  <h1>井冈山革命旧址</h1>
+                  <p>青山不老，热血长存</p>
+                </div>
+              </div>
+              <div class="cardsbox_card">
+                <img src="/image/江西/井冈山3.png" />
+                <div class="cardtro">
+                  <h1>井冈山红军雕塑群</h1>
+                  <p>风雨砺骨，丹心如炬</p>
+                </div>
+              </div>
+              <div class="row-end">
+                <h1>
+                  “江西，是红与绿的交响，文与山的共鸣。
+                  它既有江南的柔情，也有革命的刚毅。
+                  行走于此，仿佛在时间与信念之间，找到了最真切的中国。”
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 滚动浏览 -->
+      <section class="slider">
+        <div class="slider-images">
+          <img src="/image/江西/庐山1.png" alt="Slide 1" />
+        </div>
+        <div class="slider-title">
+          <h1>
+            雾在山间缠绕，如梦的白纱掩映青松。层峦间的风声轻柔，似在诉说千年的禅意。光从云隙落下，山与天交融，天地一色，只余静思。
+          </h1>
+        </div>
+        <div class="slider-indicator">
+          <div class="slider-indices"></div>
+          <div class="slider-progress-bar">
+            <div class="slider-progress"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="china-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>中国印象</h2>
+          <p>以数字之眼，重游中华山河。</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <!-- <p>From Jay@12579911@qq.com</p> -->
+          <p>© 2025 中国印象. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./scriptProvince.js"></script>
+</html>
